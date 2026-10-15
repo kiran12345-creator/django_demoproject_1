@@ -23,6 +23,8 @@ class Project(View):
     def get(self,request):
         data=[{
             'id':31,'project_name':'selenium','description':'advanced technology for testing and finding bugs',
-            'technologies':'java,sql','duration':'5 months','live_url':'lalu_the_tester'}
+            'technologies':'java,sql','duration':'5 months','live_url':'lalu_the_tester'},{
+            'id':32,'project_name':'selenium','description':'advanced technology for testing and finding bugs',
+            'technologies':'java,sql','duration':'5 months','live_url':'sherin_the_tester'}
 ]
         return JsonResponse(data,safe=False)

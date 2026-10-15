@@ -22,5 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',v.Home.as_view()),
     path('details',v.Studentdetails.as_view()),
-    path('list',v.StudentList.as_view())
+    path('list',v.StudentList.as_view()),
+    path('create',v.Studentcreate.as_view()),
+    path('details/<int:i>',v.StudentDetail.as_view()),
+    path('delete<int:i>',v.StudentDelete.as_view()),
 ]
